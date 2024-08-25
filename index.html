@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Weather</title>
+  <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ 
+  <div class="header">
+     <div class="header-title">
+        Weather app
+     </div>
+     <div class="header-buttons">
+      <button id="btn-hour" class="button">
+          Почасовой
+      </button>
+      <button id="btn-now" class="button">
+          Сейчас
+      </button>
+      <button id="btn-days" class="button">
+          На 5 дней
+      </button>
+      </div>
+    </div>
+
+    <div id="hour" class="content-conteiner hide">
+проверка страница часы
+    </div>
+
+    <div id="now" class="content-conteiner grid-container">
+     
+     <div class="grid-item">
+      Температура:
+     </div>
+     <div id="now-content" class="grid-item">
+      
+     </div>
+     <div class="grid-item">
+      Щвидкість вітру:
+     </div>
+     <div id="now-content" class="grid-item">
+      
+     </div>
+     <div class="grid-item">
+      Пориви вітру:
+     </div>
+     <div id="now-content" class="grid-item">
+      
+     </div>
+</div>
+
+    <div id="days" class="content-conteiner hide">
+        проверка страница дни
+
+    </div>
+  
+  <script type="module" src="./assets/js/dom.js"></script>
+    
+  <script type="module" src="./assets/js/functions.js">   
+  </script>
+  
+    <script type="module" src="./assets/js/script.js"></script>
+    
+</body>
+
+</html>

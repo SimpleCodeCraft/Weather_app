@@ -1,0 +1,83 @@
+#test {
+  color: gray;
+}
+body{
+  height:100%;
+}
+
+.header{
+  //display: flex;
+  //justify-content: center;
+  //border-left: 1px solid black;
+
+  //font-family: helvetica;
+  font-size: 32px
+  margin: 0px;
+
+  border-bottom: 2px solid black;
+  padding-bottom: 7.5px;
+}
+
+.header-title{
+  //display: flex;
+  width: 100%;
+  //justify-content: center;
+  font-size: 32px;
+  border-bottom: 2px solid black;
+  margin: 0px;
+}
+
+.header-buttons{
+  margin: 3px 0px;
+  padding: 0px;
+}
+/* закончился хедер */
+
+.button{
+  border: 2px solid black;
+  border-radius: 0px;
+  background-color: white;
+
+  padding: 4px 8.5px;
+  //background-color: #00e536;
+}
+
+.hide{
+  display: none;
+}
+
+.active-btn{
+  background-color: #00e536;
+}
+
+.grid-container{
+  margin-top: 11px;
+
+  display: grid;
+  grid-template-columns: 65% 35%;
+
+}
+
+.grid-item{
+  border: 1px solid black;
+
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
