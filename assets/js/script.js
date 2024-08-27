@@ -1,7 +1,7 @@
 "use strict"
 
 import { nowContentItems, nowBtn } from "./dom.js";
-// import { getWeather } from "./functions.js";
+import { windDirection } from "./functions.js";
 
 const pos = {
   lon: 35.1712728,
@@ -10,7 +10,7 @@ const pos = {
   };
 
 
-// block.textContent = wea.weather.description;
+
 
 document.addEventListener("DOMContentLoaded", function(){
 
@@ -22,10 +22,11 @@ document.addEventListener("DOMContentLoaded", function(){
       return response.json();
    })
    .then((weatherData) => {
-     nowContentItems[0].textContent = weatherData.main.temp;
-     nowContentItems[1].textContent = weatherData.wind.speed;
-     nowContentItems[2].textContent = weatherData.weather[0].description;
-  });
+     nowContentItems[0].textContent = weatherData.main.temp.toFixed(1);
+     nowContentItems[1].textContent = weatherData.wind.speed + windDirection(weatherData.wind.deg);
+     nowContentItems[2].textContent = weatherData.wind.gust.toFixed(1);
+     nowContentItems[3].textContent = weatherData.main.pressure;
+});
 
 });
 

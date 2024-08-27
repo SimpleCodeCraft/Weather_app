@@ -24,4 +24,34 @@ function getWeather(){
   return data;
 }
 
-export {getWeather};
+function windDirection(direction){
+  if(direction > 337 || direction < 23){
+    return ' 🡩';
+    // return ' півн';
+}
+  else if(direction >= 23 && direction < 68){
+    return ' 🡭'
+    // return ' пів-схід';
+  }
+  else if(direction >= 68 && direction < 113){
+    return ' 🡪';
+  }
+  else if(direction >= 113 && direction < 158){
+    return ' 🡮';
+  }
+  else if(direction >= 158 && direction < 203){
+    return ' 🡫';
+  }
+  else if(direction >= 203 && direction < 248){
+    return ' 🡯';
+  }
+  else if(direction >= 248 && direction < 293){
+    return ' 🡨';
+  }
+  else if(direction >= 293 && direction < 338){
+    return ' 🡬';
+  }
+}
+
+
+export {getWeather, windDirection};
