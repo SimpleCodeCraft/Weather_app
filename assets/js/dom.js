@@ -2,17 +2,31 @@
 
 const hourBtn = document.getElementById("btn-hour");
 
-const hourBlock = document.getElementById("hour");
-
 const nowBtn = document.getElementById("btn-now");
-
-const nowBlock = document.getElementById("now");
 
 const daysBtn = document.getElementById("btn-days");
 
+
+const hourBlock = document.getElementById("hour");
+
+const nowBlock = document.getElementById("now");
+
 const daysBlock = document.getElementById("days");
+
 
 const nowContentItems = document.querySelectorAll("#now-content");
 
 
-export {nowContentItems, nowBtn};  
+const buttons = {
+  hour: hourBtn,
+  now: nowBtn,
+  days: daysBtn,
+};
+
+const contentBlocks = {
+  hour: hourBlock,
+  now: nowBlock,
+  days: daysBlock,
+}
+
+export {nowContentItems, contentBlocks, buttons};  

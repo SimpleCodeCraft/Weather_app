@@ -42,10 +42,6 @@ body{
   //background-color: #00e536;
 }
 
-.hide{
-  display: none;
-}
-
 .active-btn{
   background-color: #00e536;
 }
@@ -81,3 +77,6 @@ body{
 
 
 
+.hide{
+  display: none;
+}

@@ -1,10 +1,10 @@
 "use strict";
 
-const pos = {
-  lon: 35.1712728,
-  lat: 47.8211498,
-  apiKey: "d3538c1541797659b6c8bc5d092411b1",
-};
+// const pos = {
+//   lon: 35.1712728,
+//   lat: 47.8211498,
+//   apiKey: "d3538c1541797659b6c8bc5d092411b1",
+// };
 
 
 function getWeather(){
@@ -53,5 +53,35 @@ function windDirection(direction){
   }
 }
 
+const setWindow = (thisBtn, buttons, contentBlocks) => {
+  // if(this.textContent === "Почасовой"){
+  //   buttons.hour.classList.add("active-btn");
+  //   buttons.now.classList.remove("active-btn");
+  //   buttons.days.classList.remove("active-btn");
 
-export {getWeather, windDirection};
+  //   contentBlocks.hour.classList.remove("hide");
+  //   contentBlocks.now.classList.add("hide");
+  //   contentBlocks.days.classList.add("hide");
+  // }
+  // else if(this.textContent === "Сейчас"){
+  //   buttons.hour.classList.remove("active-btn");
+  //   buttons.now.classList.add("active-btn");
+  //   buttons.days.classList.remove("active-btn");
+
+  //   contentBlocks.hour.classList.add("hide");
+  //   contentBlocks.now.classList.remove("hide");
+  //   contentBlocks.days.classList.add("hide");
+  // }
+  // else if(this.textContent === "На 5 дней"){
+  //   buttons.hour.classList.remove("active-btn");
+  //   buttons.now.classList.remove("active-btn");
+  //   buttons.days.classList.add("active-btn");
+
+  //   contentBlocks.hour.classList.add("hide");
+  //   contentBlocks.now.classList.add("hide");
+  //   contentBlocks.days.classList.remove("hide");
+  // }
+}
+
+
+export {getWeather, windDirection, setWindow};
