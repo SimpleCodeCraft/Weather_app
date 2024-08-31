@@ -1,5 +1,7 @@
 "use strict";
 
+const divButtons = document.querySelector(".header-buttons");
+
 const hourBtn = document.getElementById("btn-hour");
 
 const nowBtn = document.getElementById("btn-now");
@@ -29,4 +31,4 @@ const contentBlocks = {
   days: daysBlock,
 }
 
-export {nowContentItems, contentBlocks, buttons};  
+export {divButtons, nowContentItems, contentBlocks, buttons};  
