@@ -16,9 +16,12 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${coord.latitude}&lon
     })
     .then((weatherData) => {
       nowContentItems[0].textContent = weatherData.main.temp.toFixed(1);
-      nowContentItems[1].textContent = weatherData.wind.speed + windDirection(weatherData.wind.deg);
-      nowContentItems[2].textContent = weatherData.wind.gust.toFixed(1);
-      nowContentItems[3].textContent = weatherData.main.pressure;
+      nowContentItems[1].textContent = weatherData.main.feels_like.toFixed(1);
+      nowContentItems[2].textContent = weatherData.wind.speed + windDirection(weatherData.wind.deg);
+      nowContentItems[3].textContent = weatherData.wind.gust.toFixed(1);
+      nowContentItems[4].textContent = weatherData.main.pressure;
+
+      console.log(weatherData);
     });
 }
 
